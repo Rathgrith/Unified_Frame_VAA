@@ -263,21 +263,22 @@
                   </span>
 
                   <span class="link-block">
+                    <a href="https://github.com/Rathgrith/NeurIPS_2025-URF-ZS-HVAA" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
                     <a href="#BibTeX" class="external-link button is-normal is-rounded is-light">
                       <span class="icon">
                         <i class="fas fa-quote-right"></i>
                       </span>
                       <span>BibTeX</span>
                     </a>
-                  </span>
-
-                  <span class="link-block">
-                    <span class="external-link button is-normal is-rounded is-static" aria-disabled="true">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code (coming soon)</span>
-                    </span>
                   </span>
 
                   <span class="link-block">
@@ -367,8 +368,10 @@
     <section class="section" id="method">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Methodology</h2>
-        The proposed framework consists of two key components: <strong>Intra-Task Reasoning (IntraTR)</strong> and <strong>Inter-Task Chaining
-        (InterTC)</strong>. IntraTR refines temporal anomaly scores by leveraging priors from the most suspicious video segment,
+        The proposed framework consists of two key components: <strong>Intra-Task Reasoning (IntraTR)</strong> and
+        <strong>Inter-Task Chaining
+          (InterTC)</strong>. IntraTR refines temporal anomaly scores by leveraging priors from the most suspicious
+        video segment,
         while InterTC connects temporal detection with spatial localization and textual explanation, guiding frozen
         detectors and narrators using temporal cues. This chained reasoning process enables comprehensive zero-shot
         video anomaly analysis without any additional training or data.
@@ -448,7 +451,7 @@
           <h2 class="title is-3">Results at a Glance</h2>
           <p>
             The unified reasoning framework establishes new zero-shot baselines across four video anomaly benchmarks
-            while remaining completely training-free. Below we summarize the key quantitative improvements. 
+            while remaining completely training-free. Below we summarize the key quantitative improvements.
           </p>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item has-text-centered">
@@ -522,7 +525,8 @@
           <p>
             Below we present qualitative results demonstrating our method's ability to accurately detect, localize, and
             explain anomalies in a fully zero-shot manner across diverse scenarios. In all cases, our method effectively
-            identifies anomalous events, precisely localizes them in space and time, and generates fine-grained anomaly tags and coherent textual
+            identifies anomalous events, precisely localizes them in space and time, and generates fine-grained anomaly
+            tags and coherent textual
             explanations, showcasing the power of chained reasoning over frozen vision-language models.
           </p>
           <!-- one VAL image qualitative visualisation -->
@@ -586,7 +590,8 @@
             </div>
           </div>
           <p class="mt-4">
-            <strong>Qualitative temporal detection and textual explanation results.</strong> Our method accurately identifies anomalous
+            <strong>Qualitative temporal detection and textual explanation results.</strong> Our method accurately
+            identifies anomalous
             segments and generates detailed explanations by leveraging chained reasoning across tasks.
           </p>
           <div class="image">
@@ -594,7 +599,8 @@
               style="width: 70%; margin: 0 auto; display: block;" />
           </div>
           <p class="mt-4">
-            <strong>Qualitative spatial localization results on UCF-Crime.</strong> Our method accurately localizes anomalies by
+            <strong>Qualitative spatial localization results on UCF-Crime.</strong> Our method accurately localizes
+            anomalies by
             leveraging extracted priors from temporal task to guide frozen VLM detectors.
           </p>
         </div>
