@@ -18,7 +18,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Institute of Information Science, Beijing Jiaotong University">
+  <meta property="og:site_name" content="Institute of Information Science, BJTU; The MIx Group, University of Birmingham">
   <meta property="og:title" content="A Unified Reasoning Framework for Holistic Zero-Shot Video Anomaly Analysis">
   <meta property="og:description"
     content="Test-time reasoning over frozen vision-language models unifies detection, localization, and explanation for zero-shot video anomaly analysis across benchmarks.">
@@ -121,7 +121,7 @@
         "name": "Dongheng Lin",
         "affiliation": {
           "@type": "Organization",
-          "name": "Institute of Information Science, Beijing Jiaotong University"
+          "name": "The MIx Group, University of Birmingham"
         }
       },
       {
@@ -456,10 +456,10 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item has-text-centered">
               <h3 class="title is-4">Temporal Video Anomaly Detection (VAD)</h3>
-              <figure class="image">
+                <figure class="image"></figure>
                 <img src="./static/images/vad_table.png" alt="Temporal VAD results on UCF-Crime and XD-Violence"
-                  loading="lazy" />
-              </figure>
+                  loading="lazy" style="width: 75%; margin: 0 auto; display: block;" />
+                </figure>
               <p class="mt-4">
                 Intra-Task Reasoning consistently boosts AUC across backbones and datasets, with adaptive margins
                 providing further gains. Our method outperforms prior zero-shot approaches by a significant margin,
@@ -477,8 +477,6 @@
                 Inter-Task Chaining leverages temporal priors to guide frozen detectors, improving TIoU by +1.1 over
                 direct VLM localization.
               </p>
-            </div>
-            <div class="item has-text-centered">
               <h3 class="title is-4">Textual Video Anomaly Understanding (VAU)</h3>
               <figure class="image">
                 <img src="./static/images/vau_table.png"
