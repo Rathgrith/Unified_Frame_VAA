@@ -18,7 +18,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Institute of Information Science, BJTU; The MIx Group, University of Birmingham">
+  <meta property="og:site_name"
+    content="Institute of Information Science, BJTU; The MIx Group, University of Birmingham">
   <meta property="og:title" content="A Unified Reasoning Framework for Holistic Zero-Shot Video Anomaly Analysis">
   <meta property="og:description"
     content="Test-time reasoning over frozen vision-language models unifies detection, localization, and explanation for zero-shot video anomaly analysis across benchmarks.">
@@ -280,7 +281,7 @@
                       <span>arXiv</span>
                     </a>
                   </span>
-                  
+
                   <span class="link-block">
                     <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -352,8 +353,8 @@
             We present a unified reasoning framework that connects temporal detection, spatial localization, and textual
             explanation for holistic video anomaly analysis in a fully zero-shot manner. Our key contributions include:
           </p>
-        
-          <!-- <image src="./static/images/figure1.png" alt="Overview of the unified reasoning framework" loading="lazy" /> -->
+
+          <image src="./static/images/figure1.png" alt="Overview of the unified reasoning framework" loading="lazy" />
           <ul>
             <li>Introduces a unified, training-free pipeline that chains temporal detection, spatial localization, and
               textual explanation for holistic video anomaly analysis.</li>
@@ -367,42 +368,59 @@
         </div>
       </div>
     </section>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">Video Presentation</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video placeholder-video">
+                <video poster="" id="teaser_video" controls muted loop height="100%" preload="metadata">
+                  <source src="./static/videos/teaser.mp4" type="video/mp4">
+                </video>
+              </div>
+              <h2 class="subtitle has-text-centered mt-4">
 
-    <section class="section" id="method">
-      <div class="container is-max-desktop">
-        <h2 class="title is-3">Methodology</h2>
-        The proposed framework consists of two key components: <strong>Intra-Task Reasoning (IntraTR)</strong> and
-        <strong>Inter-Task Chaining
-          (InterTC)</strong>. IntraTR refines temporal anomaly scores by leveraging priors from the most suspicious
-        video segment,
-        while InterTC connects temporal detection with spatial localization and textual explanation, guiding frozen
-        detectors and narrators using temporal cues. This chained reasoning process enables comprehensive zero-shot
-        video anomaly analysis without any additional training or data.
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <img src="./static/images/intraTR.png" alt="Intra-Task Reasoning methodology" loading="lazy"
-                style="width: 50%; margin: 0 auto; display: block;" />
-              <h2 class="subtitle has-text-centered">
-                Intra-Task Reasoning (IntraTR) enhances temporal anomaly detection by refining scores based on
-                contextual video segments.
-              </h2>
-            </div>
-            <div class="item">
-              <img src="./static/images/interTC.png" alt="Inter-Task Chaining methodology" loading="lazy"
-                style="width: 40%; margin: 0 auto; display: block;" />
-              <h2 class="subtitle has-text-centered">
-                Inter-Task Chaining (InterTC) links temporal detection with spatial localization and textual
-                explanation, enabling holistic anomaly analysis.
               </h2>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <section class="section" id="method">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">Methodology</h2>
+          The proposed framework consists of two key components: <strong>Intra-Task Reasoning (IntraTR)</strong> and
+          <strong>Inter-Task Chaining
+            (InterTC)</strong>. IntraTR refines temporal anomaly scores by leveraging priors from the most suspicious
+          video segment,
+          while InterTC connects temporal detection with spatial localization and textual explanation, guiding frozen
+          detectors and narrators using temporal cues. This chained reasoning process enables comprehensive zero-shot
+          video anomaly analysis without any additional training or data.
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <img src="./static/images/intraTR.png" alt="Intra-Task Reasoning methodology" loading="lazy"
+                  style="width: 50%; margin: 0 auto; display: block;" />
+                <h2 class="subtitle has-text-centered">
+                  Intra-Task Reasoning (IntraTR) enhances temporal anomaly detection by refining scores based on
+                  contextual video segments.
+                </h2>
+              </div>
+              <div class="item">
+                <img src="./static/images/interTC.png" alt="Inter-Task Chaining methodology" loading="lazy"
+                  style="width: 40%; margin: 0 auto; display: block;" />
+                <h2 class="subtitle has-text-centered">
+                  Inter-Task Chaining (InterTC) links temporal detection with spatial localization and textual
+                  explanation, enabling holistic anomaly analysis.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
-    <!-- <section class="section" id="results">
+      <!-- <section class="section" id="results">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Results at a Glance</h2>
     <div class="content">
@@ -447,81 +465,65 @@
 </section> -->
 
 
-    <!-- Image carousel -->
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <h2 class="title is-3">Results at a Glance</h2>
-          <p>
-            The unified reasoning framework establishes new zero-shot baselines across four video anomaly benchmarks
-            while remaining completely training-free. Below we summarize the key quantitative improvements.
-          </p>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item has-text-centered">
-              <h3 class="title is-4">Temporal Video Anomaly Detection (VAD)</h3>
+      <!-- Image carousel -->
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <h2 class="title is-3">Results at a Glance</h2>
+            <p>
+              The unified reasoning framework establishes new zero-shot baselines across four video anomaly benchmarks
+              while remaining completely training-free. Below we summarize the key quantitative improvements.
+            </p>
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item has-text-centered">
+                <h3 class="title is-4">Temporal Video Anomaly Detection (VAD)</h3>
                 <figure class="image"></figure>
                 <img src="./static/images/vad_table.png" alt="Temporal VAD results on UCF-Crime and XD-Violence"
                   loading="lazy" style="width: 75%; margin: 0 auto; display: block;" />
                 </figure>
-              <p class="mt-4">
-                Intra-Task Reasoning consistently boosts AUC across backbones and datasets, with adaptive margins
-                providing further gains. Our method outperforms prior zero-shot approaches by a significant margin,
-                closing the gap to supervised methods without any training.
-              </p>
-            </div>
-            <div class="item has-text-centered">
-              <h3 class="title is-4">Spatial Video Anomaly Localization (VAL)</h3>
-              <figure class="image">
-                <!-- resize images to 40% and center -->
-                <img src="./static/images/val_table.png" alt="Spatial VAL results on UCF-Crime" loading="lazy"
-                  style="width: 30%; margin: 0 auto; display: block; " />
-              </figure>
-              <p class="mt-4">
-                Inter-Task Chaining leverages temporal priors to guide frozen detectors, improving TIoU by +1.1 over
-                direct VLM localization.
-              </p>
-              <h3 class="title is-4">Textual Video Anomaly Understanding (VAU)</h3>
-              <figure class="image">
-                <img src="./static/images/vau_table.png"
-                  alt="Video anomaly understanding results on UCF-Crime and XD-Violence" loading="lazy" />
-              </figure>
-              <p class="mt-4">
-                Inter-task chaining consistently improves both traditional and LLM-based metrics over frozen narrators,
-                closing the gap to supervised instruction-tuned systems.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End image carousel -->
-        <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <h2 class="title is-3">Video Presentation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="publication-video placeholder-video">
-                <video poster="" id="teaser_video" controls muted loop height="100%" preload="metadata">
-                  <source src="./static/videos/teaser.mp4" type="video/mp4">
-                </video>
+                <p class="mt-4">
+                  Intra-Task Reasoning consistently boosts AUC across backbones and datasets, with adaptive margins
+                  providing further gains. Our method outperforms prior zero-shot approaches by a significant margin,
+                  closing the gap to supervised methods without any training.
+                </p>
               </div>
-              <h2 class="subtitle has-text-centered mt-4">
-      
-              </h2>
+              <div class="item has-text-centered">
+                <h3 class="title is-4">Spatial Video Anomaly Localization (VAL)</h3>
+                <figure class="image">
+                  <!-- resize images to 40% and center -->
+                  <img src="./static/images/val_table.png" alt="Spatial VAL results on UCF-Crime" loading="lazy"
+                    style="width: 30%; margin: 0 auto; display: block; " />
+                </figure>
+                <p class="mt-4">
+                  Inter-Task Chaining leverages temporal priors to guide frozen detectors, improving TIoU by +1.1 over
+                  direct VLM localization.
+                </p>
+                <h3 class="title is-4">Textual Video Anomaly Understanding (VAU)</h3>
+                <figure class="image">
+                  <img src="./static/images/vau_table.png"
+                    alt="Video anomaly understanding results on UCF-Crime and XD-Violence" loading="lazy" />
+                </figure>
+                <p class="mt-4">
+                  Inter-task chaining consistently improves both traditional and LLM-based metrics over frozen
+                  narrators,
+                  closing the gap to supervised instruction-tuned systems.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- End image carousel -->
 
 
 
-    <!-- Youtube video
+
+      <!-- Youtube video
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container"> -->
-    <!-- Paper video. -->
-    <!-- <h2 class="title is-3">Video Presentation</h2>
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="publication-video placeholder-video">
@@ -532,108 +534,111 @@
     </div>
   </div>
 </section> -->
-    <!-- End youtube video -->
+      <!-- End youtube video -->
 
 
-    <!-- Video carousel -->
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <h2 class="title is-3">Qualitative Results</h2>
-          <p>
-            Below we present qualitative results demonstrating our method's ability to accurately detect, localize, and
-            explain anomalies in a fully zero-shot manner across diverse scenarios. In all cases, our method effectively
-            identifies anomalous events, precisely localizes them in space and time, and generates fine-grained anomaly
-            tags and coherent textual
-            explanations, showcasing the power of chained reasoning over frozen vision-language models.
-          </p>
-          <!-- one VAL image qualitative visualisation -->
-          <p class="has-text-centered"></p>
-          <div id="qualitative-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Arrest001_x264_viz.mp4" type="video/mp4">
-              </video>
+      <!-- Video carousel -->
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <h2 class="title is-3">Qualitative Results</h2>
+            <p>
+              Below we present qualitative results demonstrating our method's ability to accurately detect, localize,
+              and
+              explain anomalies in a fully zero-shot manner across diverse scenarios. In all cases, our method
+              effectively
+              identifies anomalous events, precisely localizes them in space and time, and generates fine-grained
+              anomaly
+              tags and coherent textual
+              explanations, showcasing the power of chained reasoning over frozen vision-language models.
+            </p>
+            <!-- one VAL image qualitative visualisation -->
+            <p class="has-text-centered"></p>
+            <div id="qualitative-carousel" class="carousel results-carousel">
+              <div class="item item-video1">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Arrest001_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video2">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Assault006_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video3">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Burglary033_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video4">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Explosion008_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video5">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Fighting047_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video6">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video6" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Robbery102_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video7">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video7" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Normal_Videos_913_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-video8">
+                <!-- Poster image placeholder -->
+                <video poster="" id="video8" controls muted loop height="100%" preload="metadata">
+                  <!-- Video placeholder -->
+                  <source src="./static/videos/qualitative_vad_vau/Normal_Videos_936_x264_viz.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
-            <div class="item item-video2">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Assault006_x264_viz.mp4" type="video/mp4">
-              </video>
+            <p class="mt-4">
+              <strong>Qualitative temporal detection and textual explanation results.</strong> Our method accurately
+              identifies anomalous
+              segments and generates detailed explanations by leveraging chained reasoning across tasks.
+            </p>
+            <div class="image">
+              <img src="static/images/val_qual.png" alt="Qualitative Localisation results on UCF-Crime" loading="lazy" ,
+                style="width: 70%; margin: 0 auto; display: block;" />
             </div>
-            <div class="item item-video3">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Burglary033_x264_viz.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video4">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Explosion008_x264_viz.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video5">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Fighting047_x264_viz.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video6">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video6" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Robbery102_x264_viz.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video7">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video7" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Normal_Videos_913_x264_viz.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video8">
-              <!-- Poster image placeholder -->
-              <video poster="" id="video8" controls muted loop height="100%" preload="metadata">
-                <!-- Video placeholder -->
-                <source src="./static/videos/qualitative_vad_vau/Normal_Videos_936_x264_viz.mp4" type="video/mp4">
-              </video>
-            </div>
+            <p class="mt-4">
+              <strong>Qualitative spatial localization results on UCF-Crime.</strong> Our method accurately localizes
+              anomalies by
+              leveraging extracted priors from temporal task to guide frozen VLM detectors.
+            </p>
           </div>
-          <p class="mt-4">
-            <strong>Qualitative temporal detection and textual explanation results.</strong> Our method accurately
-            identifies anomalous
-            segments and generates detailed explanations by leveraging chained reasoning across tasks.
-          </p>
-          <div class="image">
-            <img src="static/images/val_qual.png" alt="Qualitative Localisation results on UCF-Crime" loading="lazy" ,
-              style="width: 70%; margin: 0 auto; display: block;" />
-          </div>
-          <p class="mt-4">
-            <strong>Qualitative spatial localization results on UCF-Crime.</strong> Our method accurately localizes
-            anomalies by
-            leveraging extracted priors from temporal task to guide frozen VLM detectors.
-          </p>
+
         </div>
-
-      </div>
-    </section>
-    <!-- End video carousel -->
+      </section>
+      <!-- End video carousel -->
 
 
 
 
 
 
-    <!-- Paper poster -->
-    <!-- <section class="hero is-small is-light">
+      <!-- Paper poster -->
+      <!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -644,21 +649,21 @@
       </div>
     </div>
   </section> -->
-    <!--End paper poster -->
+      <!--End paper poster -->
 
 
 
-    <!--BibTex citation -->
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <div class="bibtex-header">
-          <h2 class="title">BibTeX</h2>
-          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-            <i class="fas fa-copy"></i>
-            <span class="copy-text">Copy</span>
-          </button>
-        </div>
-        <pre id="bibtex-code"><code>@inproceedings{
+      <!--BibTex citation -->
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <div class="bibtex-header">
+            <h2 class="title">BibTeX</h2>
+            <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+              <i class="fas fa-copy"></i>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+          <pre id="bibtex-code"><code>@inproceedings{
 lin2025AUR,
 title={A Unified Reasoning Framework for Holistic Zero-Shot Video Anomaly Analysis},
 author={Dongheng Lin, Mengxue Qu, Kunyang Han, Jianbo Jiao, Xiaojie Jin, Yunchao Wei},
@@ -666,38 +671,39 @@ booktitle={The Thirty-ninth Annual Conference on Neural Information Processing S
 year={2025},
 url={https://openreview.net/forum?id=Qla5PqFL0s}
 }</code></pre>
-      </div>
-    </section>
-    <!--End BibTex citation -->
+        </div>
+      </section>
+      <!--End BibTex citation -->
 
 
-    <footer class="footer">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8">
-            <div class="content">
+      <footer class="footer">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
 
-              <p>
-                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                  target="_blank">Academic Project Page Template</a> which was adopted from the <a
-                  href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-                You are free to borrow the source code of this website, we just ask that you link back to this page in
-                the footer. <br> This website is licensed under a <a rel="license"
-                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                  Commons Attribution-ShareAlike 4.0 International License</a>.
-              </p>
+                <p>
+                  This page was built using the <a
+                    href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                    Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                    target="_blank">Nerfies</a> project page.
+                  You are free to borrow the source code of this website, we just ask that you link back to this page in
+                  the footer. <br> This website is licensed under a <a rel="license"
+                    href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
-    <!-- Statcounter tracking code -->
+      <!-- Statcounter tracking code -->
 
-    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+      <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+      <!-- End of Statcounter Code -->
 
 </body>
 
