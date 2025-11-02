@@ -273,21 +273,21 @@
                   </span>
 
                   <span class="link-block">
-                    <a href="#BibTeX" class="external-link button is-normal is-rounded is-light">
+                    <a href="https://arxiv.org/" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  
+                  <span class="link-block">
+                    <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-quote-right"></i>
                       </span>
                       <span>BibTeX</span>
                     </a>
-                  </span>
-
-                  <span class="link-block">
-                    <span class="external-link button is-normal is-rounded is-static" aria-disabled="true">
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>arXiv (pending)</span>
-                    </span>
                   </span>
                 </div>
               </div>
@@ -340,7 +340,26 @@
       </div>
     </section>
     <!-- End paper abstract -->
-
+    <!-- 5-MIN TEASER VIDEO -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">Teaser Video</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video placeholder-video">
+                <video poster="" id="teaser_video" controls muted loop height="100%" preload="metadata">
+                  <source src="./static/videos/teaser_video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <h2 class="subtitle has-text-centered mt-4">
+      
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Highlights -->
 
     <section class="section" id="overview">
       <div class="container is-max-desktop">
@@ -350,7 +369,8 @@
             We present a unified reasoning framework that connects temporal detection, spatial localization, and textual
             explanation for holistic video anomaly analysis in a fully zero-shot manner. Our key contributions include:
           </p>
-          <image src="./static/images/figure1.png" alt="Overview of the unified reasoning framework" loading="lazy" />
+        
+          <!-- <image src="./static/images/figure1.png" alt="Overview of the unified reasoning framework" loading="lazy" /> -->
           <ul>
             <li>Introduces a unified, training-free pipeline that chains temporal detection, spatial localization, and
               textual explanation for holistic video anomaly analysis.</li>
